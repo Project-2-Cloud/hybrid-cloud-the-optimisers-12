@@ -10,7 +10,7 @@ html, body {
     height: 100%;
 }
 
-/* Title page */
+/* Title section */
 #title {
     height: 100vh;
     padding: 20vh 15vw;
@@ -23,7 +23,7 @@ html, body {
     height: 60vh;
     width: 70vw;
     background: white;
-    opacity: 70%;
+    opacity: 0.7;
     z-index: 0;
 }
 #title #temp-logo {
@@ -52,5 +52,65 @@ html, body {
     #title p  {
         margin-top: 6vh;
         font-size: 4vw;
+    }
+}
+
+/* About section */
+#about {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+#about .bg {
+    opacity: 0.6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 100vh;
+}
+#about #fruits {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#about #about-text {
+    top: 50%;
+    transform: translateY(-50%);    
+    text-align: center;
+}
+#about #about-text h2 {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: green;
+    font-size: 3vw;
+    font-weight: 600;
+}
+#about #about-text p {
+    position: relative;
+    font-family: 'Lora', serif;
+    color: green;
+    font-size: 1.5vw;
+}
+@media only screen and (max-width: 991px) {
+    #about #about-text  {
+        top: 30%;
+        font-size: 4vw;
+    }
+    #about #fruits {
+        top:40%;
+    }
+    #about #about-text h2 {
+        font-size: 5vw;
+    }
+    #about #about-text p {
+        font-size: 2.1vw;
+    }
+}
+@media only screen and (max-width: 575px) {
+    #about #about-text p {
+        font-size: 3vw;
     }
 }
